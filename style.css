@@ -88,6 +88,31 @@ i{
     }
 }
 
+/* mobile heading for small screen */
+@media(max-width:1000px){
+    #mob-heading{
+        margin-top: 80px;
+        margin-bottom: 10px;
+        padding: 10px 20px; 
+    }
+    .mobiles{
+        grid-template-columns: 30% 30% 30%;
+        justify-content: space-around;
+    }
+    .mobiles div{
+        margin: 10px 0;
+        height: 100%;
+        border: 1px solid #fafafa;
+    }
+    .mobiles div img{
+        height: 90%;
+        width: 90%;
+    }
+    .mobiles span p{
+        font-size: medium;
+    }
+}
+
     /*nav bar For Mobile*/
     @media(max-width:400px){
     nav{
@@ -151,6 +176,20 @@ i{
     }
 }
 
+/* mobile setting for mobile headings */
+@media(max-width:400px){
+    #mob-heading{
+        margin-top: 30px;
+        margin-bottom: 0px;
+        padding: 0 20px;
+        font-size: 2.5vh;
+    }
+    .mobiles{
+        grid-template-columns: 50% 50%;
+        justify-content: space-around;
+    }
+}
+
 /* Home */
 .home{
     display: grid;
@@ -197,4 +236,84 @@ i{
 .background-images img{
     width: 300px;
     height: 200px;
+}
+
+#mob-heading{
+    margin-top: 60px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+}
+.mobiles{
+    display: grid;
+    grid-template-columns: 14% 14% 14% 14% 14% 14%;
+    justify-content: space-around;
+}
+.mobiles div{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #fafafa;
+    border: 1px solid gainsboro;
+    text-align: center;
+    margin: 10px 0;
+}
+.mobiles div img{
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: transparent;
+}
+.mobiles span p{
+    padding: 3px;
+    font-size: small;
+}
+.mobiles span p:first-child{
+    font-weight: bold;
+}
+
+/* laptop section */
+#laptop-heading{
+    margin-top: 60px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+}
+.laptops{
+    display: grid;
+    grid-template-columns: 22% 22% 22% 22%;
+    justify-content: space-around;
+}
+.laptops div{
+    align-items: center;
+    background-color: #fafafa;
+    border: 1px solid #a09d9d;
+    text-align: center;
+}
+.laptops div img{
+    height: 160px;
+    width: 180px;
+    border-radius: 5px;
+    margin: 15px;
+    margin-bottom: 5px;
+    background-color: transparent;
+}
+.notify{
+    background-color: #080808;
+    color: #090909;
+    width: 90px;
+    height: 40px;
+    padding: 0;
+    margin-top: 10px;
+    box-shadow: rgb(0,0,0,0.35) 0px 5px 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.notify p{
+    padding-top: 10px;
+    font-size: small;
+}
+.laptops h4{
+    padding-top: 5px;
+    padding-bottom: 15px;
 }
