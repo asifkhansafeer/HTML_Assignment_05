@@ -40,7 +40,7 @@ i{
     padding-left: 10px;
 }
 
-/*For Small Screens*/
+/* nav bar For Small Screens*/
 @media(max-width:1000px){
     nav{
         height: 80px;
@@ -66,7 +66,19 @@ i{
         padding-left: 7px;
     }
 }
-    /*For Mobile*/
+
+/* categories for small screen */
+@media(max-width:1000px){
+    .categories h2{
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+    }
+    .categories li{
+        padding: 6px 0;
+    }
+}
+
+    /*nav bar For Mobile*/
     @media(max-width:400px){
     nav{
         height: 60px;
@@ -93,4 +105,53 @@ i{
     .cart img{
         padding-left: 5px;
     }
+}
+
+/* categories for mobile screen */
+@media(max-width:400px){
+    .home{
+        margin: 20px 0;
+    }
+    .categories{
+        padding: 5px;
+        height: 70px;
+    }
+    .categories h2{
+        font-size: 7px;
+        margin-top: 2px;
+        padding: 2px;
+    }
+    .categories li{
+        padding: 2px 0px;
+        font-size: 1vh;
+    }
+}
+
+/* Home */
+.home{
+    display: grid;
+    grid-template-columns: 20% 75%;
+    margin: 30px 0px;
+    justify-content: space-evenly;
+}
+.categories{
+    background-color: aliceblue;
+    border: 1px solid wheat;
+    padding: 15px;
+}
+.categories h2{
+    background-color: rgba(71, 71, 186, 0.504);
+    color: #fff;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+.categories li{
+    list-style-type: none;
+    padding: 8px 0;
+    padding-left: 20px;
+}
+.categories li a{
+    text-decoration: none;
+    color: #000;
 }
