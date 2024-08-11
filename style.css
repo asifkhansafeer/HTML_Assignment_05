@@ -317,3 +317,30 @@ i{
     padding-top: 5px;
     padding-bottom: 15px;
 }
+#smart-watch{
+    margin-top: 60px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+}
+.watches{
+    display: grid;
+    grid-template-columns: 25% 25%;
+    justify-content: space-around;
+}
+.watches div{
+    align-items: center;
+    background-color: #fafafa;
+    border: 1px solid #a09d9d;
+    text-align: center;
+}
+.watches div img{
+    height: 160px;
+    width: 180px;
+    border-radius: 5px;
+    margin: 20px;
+    margin-bottom: 5px;
+    background-color: transparent;
+}
+.watches div h4{
+    margin-top: 20px;
+}
